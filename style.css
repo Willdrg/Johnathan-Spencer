@@ -1,0 +1,297 @@
+:root {
+    --grey: #7a7a7a;
+    --white: #ffffff;
+    --darkgrey: #2e3038;
+  }
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.menu-header {
+    background-color: black;
+    display: flex;
+    position: relative;
+    padding: 20px 8px;
+}
+.menu-header-logo {
+    color: var(--white);
+    font-family: 'Prata', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.menu-header-icon {
+    position: absolute;
+    right: 8px;
+}
+.menu-header-list{
+    list-style: none;
+    display: none;
+}
+.menu-header-list-item{
+    color: var(--grey);
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menu-header-button{
+    display: none;
+    background-color: rgba(255, 255, 0, 0.787);
+    width: 130px;
+    height: 40px;
+    border-style: none;
+    font-family: 'Prata', serif;
+}
+.containerOne {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+}
+
+.containerOne-header h1 {
+    color: var(--white);
+    font-family: 'Prata', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+.containerOne-description {
+    color: var(--grey);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 7px;
+}
+.containerOne-logos {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    row-gap: 20px;
+    column-gap: 11px;
+}
+.containerOne-spence {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.containerOne-spence img{ 
+    text-align: center; 
+    width: 100%;
+}
+.containerOne-spence-link {
+    color: var(--white);
+    font-family: 'Prata', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.containerOne-spence-description{
+    color: var(--grey);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 7px;
+}
+.containerOne-yelpcamp {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.containerOne-yelpcamp img{ 
+    text-align: center; 
+    width: 100%;
+}
+.containerOne-yelpcamp-link {
+    color: var(--white);
+    font-family: 'Prata', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.containerOne-yelpcamp-description{
+    color: var(--grey);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 7px;
+}
+.containerTwo {
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.containerTwo-header{
+    color: var(--white);
+    font-family: 'Prata', serif;
+    font-size: 3rem;
+    font-weight: 300;
+}
+.containerTwo-description {
+    color: var(--grey);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 7px;
+    white-space: pre-line;
+}
+.containerThree {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 8px;
+}
+.containerThree-title{
+    color: var(--white);
+    font-family: 'Prata', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+.containerThree-description {
+    color: var(--grey);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 7px;
+    white-space: pre-line;
+}
+.containerThree-button {
+    background-color: rgba(255, 255, 0, 0.787);
+    width: 130px;
+    height: 40px;
+    border-style: none;
+    font-family: 'Prata', serif;
+    margin-top: 20px;
+}
+footer {
+    background-color: var(--darkgrey);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8px;
+}
+.footer-icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+    .menu-header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .containerOne{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .containerOne-header h1{
+        font-size: 5rem;
+    }
+    .containerOne-description{
+        font-size: 1.9rem;
+    }
+    .containerOne-logos{
+        max-width: 400px;
+    }
+    .containerOne-spence-description{
+        font-size: 1.9rem;
+    }
+    .containerOne-yelpcamp-description{
+        font-size: 1.9rem;
+    }
+    .containerTwo{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .containerTwo-description{
+        font-size: 1.9rem;
+    }
+    .containerThree{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .containerThree-description{
+        font-size: 1.9rem;
+    }
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .menu-header {
+        padding-left: 125px;
+        padding-right: 125px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-header-list {
+        display: block;
+    }
+    .menu-header-button{
+        display: block;
+    }
+    .menu-header-icon{
+        display: none;
+    }
+    .containerOne{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .containerOne-header {
+        max-width: 603px;
+        position: relative;
+        right: 150px;
+    }
+    .containerOne-description {
+        max-width: 603px;
+        position: relative;
+        right: 150px;
+    }
+    .containerOne-logos{
+        max-width: 100%;
+        column-gap: 48px;
+    }
+    .containerOne-links{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .containerOne-spence {
+        max-width: 440px;
+    }
+    .containerOne-yelpcamp {
+        max-width: 440px;;
+    }
+    .containerTwo{
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+    .containerThree{
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+    footer {
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+}
